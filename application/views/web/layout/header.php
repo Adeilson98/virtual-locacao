@@ -15,7 +15,21 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/main.css'); ?>">
 
+    <link rel="stylesheet" href="<?php echo base_url('assets/site/css/header.css'); ?>">
+
 </head>
 <body>
     
-<h1>teste</h1>
+    <header>
+        <nav>
+            <img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo">
+
+            <a href="">Sobre</a>
+
+            <a href="">Serviços</a>
+
+            <a href="impressoras">Impressoras</a>
+
+            <a href="">Contato</a>
+        </nav>
+    </header>
