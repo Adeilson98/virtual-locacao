@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?php echo $titulo; ?></title>
 
     <!-- Fonts -->
 
@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/header.css'); ?>">
 
+    <!-- Font Awesome -->
+
+    <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
 </head>
 <body>
     
@@ -28,7 +32,7 @@
 
             <a href="">Serviços</a>
 
-            <a href="impressoras">Impressoras</a>
+            <a href="<?php echo base_url('impressoras/'); ?>">Impressoras</a>
 
             <a href="">Contato</a>
         </nav>

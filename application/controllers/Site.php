@@ -2,7 +2,7 @@
 
     defined('BASEPATH') or exit('No direct script access allowed');
 
-    class Site extends Ci_Controller {
+    class Site extends CI_Controller {
 
         public function __construct() {
 
@@ -19,6 +19,20 @@
             $this->load->view('web/layout/header', $data);
 
             $this->load->view('web/home');
+
+            $this->load->view('web/layout/footer');
+
+        }
+
+        public function Impressoras() {
+
+            $data['titulo'] = 'Virtual - Impressoras';
+
+
+
+            $this->load->view('web/layout/header', $data);
+
+            $this->load->view('web/impressoras');
 
             $this->load->view('web/layout/footer');
 
