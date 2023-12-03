@@ -30,7 +30,7 @@
 
                 <div class="card-body second-card">
 
-                    <a class="listar-mentores" href="banners/adicionarbanner"><i class="fas fa-plus mr-2"></i> Adicionar Impressora</a>
+                    <a class="listar-mentores" href="impressoras_admin/adicionarimpressora"><i class="fas fa-plus mr-2"></i> Adicionar Impressora</a>
 
                 </div>
 

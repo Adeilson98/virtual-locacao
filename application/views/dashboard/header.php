@@ -57,6 +57,8 @@
 
     <!-- CSS -->
 
+    <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/main.css') ?>">
+    
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/dashboard.css') ?>">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/sort-item.css') ?>">
@@ -131,7 +133,7 @@
 
                         <li class="nav-item">
 
-                            <?php echo anchor('banners', '<span><i class="fas fa-laptop-code"></i> Impressoras</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('impressoras_admin', '<span><i class="fas fa-laptop-code"></i> Impressoras</span>', array('class' => 'nav-link')) ?>
 
                         </li>
 
