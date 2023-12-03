@@ -28,18 +28,6 @@
 
             <div class="collumn">
 
-                <b>Fabricante</b>
-
-                <p>Teste</p>
-
-                <b>Nome do Produto</b>
-
-                <p>Teste</p>
-
-                <b>Nome do Produto</b>
-
-                <p>Teste</p>
-
                 <b>Cor / Mono</b>
 
                 <p>Teste</p>
@@ -48,10 +36,6 @@
 
                 <p>Teste</p>
 
-            </div>
-
-            <div class="collumn">
-
                 <b>Memória (Padrão)</b>
 
                 <p>Teste</p>
@@ -59,6 +43,10 @@
                 <b>Resolução (DPI)</b>
 
                 <p>Teste</p>
+
+            </div>
+
+            <div class="collumn">
 
                 <b>Linguagem de Impressão</b>
 
