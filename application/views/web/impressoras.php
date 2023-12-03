@@ -1,4 +1,4 @@
-<section class="__wrap">
+<section>
 
     <h2>Confira as nossas impressoras <br> disponíveis para locação!</h2>
 

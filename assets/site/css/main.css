@@ -12,8 +12,7 @@ h2 {
     font-weight: bold;
 }
 
-
-/* Slider */
+/* Impressoras */
 
 .flex-items {
     display: flex;
@@ -46,7 +45,7 @@ h2 {
     color: #808080;
 }
 
-.flex-items .item .btn-destaque {
+.btn-destaque {
     border: 1px solid #f18a25;
     width: 150px;
     height: 40px;
@@ -60,7 +59,70 @@ h2 {
     transition: all ease .8s;
 }
 
-.flex-items .item .btn-destaque:hover {
+.btn-destaque:hover {
     background-color: #f18a25;
     color: white;
+}
+
+/* Impressoras Interna */
+
+.__wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.__wrap h3 {
+    color: #f18a25;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.dobra1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dobra1 h1 {
+    color: #f18a25;
+    font-size: 30px;
+}
+
+.dobra1 p {
+    color: #808080;
+    width: 500px;
+}
+
+.dobra1 img {
+    width: 40%;
+}
+
+.downloads {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.dobra2 {
+    margin-top: 100px;
+}
+
+.dobra2 .rows {
+    margin-top: 50px;
+    display: flex;
+}
+
+.dobra2 .rows .collumn {
+    margin-right: 350px;
+}
+
+.dobra2 .rows .collumn b {
+    font-size: 18px;
+    color: #f18a25;
+}
+
+.dobra2 .rows .collumn p {
+    color: #808080;
 }

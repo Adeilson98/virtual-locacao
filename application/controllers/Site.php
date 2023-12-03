@@ -37,6 +37,19 @@
             $this->load->view('web/layout/footer');
 
         }
+
+        public function Impressora_interna() {
+
+            $data['titulo'] = 'Placeholder';
+
+
+            $this->load->view('web/layout/header', $data);
+
+            $this->load->view('web/impressora_interna');
+
+            $this->load->view('web/layout/footer');
+
+        }
     }
 
 ?>
