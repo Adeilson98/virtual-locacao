@@ -15,72 +15,52 @@ h2 {
 
 /* Slider */
 
-.slider {
-    position: relative;
-    overflow: hidden;
-    margin-left: 5%;
-    margin-bottom: 40px;
-}
-
-.slider .rail {
-    width: 9999%;
-    height: 100%;
-    position: relative;
-    left: 0;
-    padding: 0;
-    transition: all .75s ease;
+.flex-items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.slider .rail .item {
+.flex-items .item {
     width: 300px;
     height: auto;
-    margin-right: 15px;
+    margin: 0 30px 30px;
     padding: 20px 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 30px 15px 50px 15px;
     cursor: pointer;
     background-color: white;
-    margin-bottom: 10px;
 }
 
-.slider .rail .item:hover {
+.flex-items .item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.slider .rail .item h3 {
+.flex-items .item h3 {
     font-size: 24px;
     color: #f18a25;
 }
 
-.slider .rail .item p {
+.flex-items .item p {
     color: #808080;
 }
 
-#prev,
-  #next {
-    position: absolute;
-    top: 50%;
-    color: #aaa;
+.flex-items .item .btn-destaque {
+    border: 1px solid #f18a25;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: bolder;
     text-decoration: none;
-    font-size: 2rem;
-    padding: 5px 3px;
-    background: white;
-    text-align: center;
-    transform: translateY(-50%);
-    transition: all 0.15s ease;
-    border: 1px solid #ddd;
-    border-radius: 0 3px 3px 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  #next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  #prev:hover,
-  #next:hover {
-    color: #888;
-  }
+    color: #f18a25;
+    transition: all ease .8s;
+}
+
+.flex-items .item .btn-destaque:hover {
+    background-color: #f18a25;
+    color: white;
+}
