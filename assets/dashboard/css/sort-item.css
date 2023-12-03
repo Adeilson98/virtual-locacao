@@ -1,0 +1,11 @@
+#sortable-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sortable-row {
+    cursor: grab;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
