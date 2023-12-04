@@ -63,7 +63,9 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/sort-item.css') ?>">
 
-    <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/thumb-image.css') ?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/thumb-image.css') ?>"> -->
+
+    <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/image-preview.css') ?>">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/bootstrap.min.css') ?>">
 

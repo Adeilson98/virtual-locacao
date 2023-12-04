@@ -168,8 +168,14 @@
                             <label for="imagemDestaque" class="form-label">Imagem Destaque</label>
 
                             <br />
+ 
+                            <div class="thumb" onclick="selectImg()">
+                                <img src="<?php echo base_url('assets/dashboard/images/image_default.png'); ?>" id="img" class="img">
 
-                            <input type="file" name="imagemDestaque" class="form-control-file" id="imgDestaque">
+                                <div class="remove" onclick="removeImg()"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+
+                            <input type="file" name="imagemDestaque" class="form-control-file" id="imgDestaque" onchange="readUrl(this)">
 
                         </div>
 

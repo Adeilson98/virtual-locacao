@@ -18,6 +18,8 @@
 
 <script src="<?php echo base_url('assets/dashboard/js/thumb-image.js') ?>"></script>
 
+<script src="<?php echo base_url('assets/dashboard/js/image-preview.js') ?>"></script>
+
 
 
 <!-- Sortable Jquery -->
