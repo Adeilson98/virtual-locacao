@@ -28,7 +28,7 @@
 
                     <tr>
 
-                        <th>ID</th>
+                        <th>Thumb</th>
 
                         <th>Nome da Impressora</th>
 
@@ -46,7 +46,7 @@
 
                         <tr>
 
-                            <td><?= $impressora->id ?></td>
+                            <td><img src="<?php echo base_url('upload/impressoras/') ?><?php echo $impressora->imagem; ?>" width="90px"></td>
 
                             <td><?= $impressora->nome ?></td>
 
@@ -54,9 +54,9 @@
 
                             <td class="text-center">
 
-                                <?= anchor('blog_admin/editarimpressora/' . $impressora->id, '<i class="fas fa-edit"></i>', array('title' => 'Editar')) ?>
+                                <?= anchor('impressoras_admin/editarimpressora/' . $impressora->id, '<i class="fas fa-edit"></i>', array('title' => 'Editar')) ?>
 
-                                <?= anchor('blog_admin/deletarimpressora/' . $impressora->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                                <?= anchor('impressoras_admin/deletarimpressora/' . $impressora->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
 
                             </td>
 

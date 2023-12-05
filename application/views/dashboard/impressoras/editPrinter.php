@@ -1,80 +1,198 @@
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2"><i class="fas fa-laptop-code"></i> <?php echo $titulo_pagina ?></h1>
-    </div>
-
-    <section id="error-area">
-        <div class="row">
-            <div class="col-12 col-sm-12">
-                <?= validation_errors('<div class="alert alert-danger" role="alert">', '</div>') ?>
-                <?= $this->session->userdata('msg'); ?>
-            </div>
-        </div>
-    </section>
-
-    <div class="row">
-        <div class="col-12 col-sm-12 mb-4">
-            <form action="posts/editarpost/<?php echo ($query->id) ?>" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="tituloPost" class="form-label">Título do Post</label>
-                            <input type="text" class="form-control" id="tituloPost" name="tituloPost" value="<?php echo ($query->title) ?>">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="slugPost" class="form-label">Slug</label>
-                            <input type="text" class="form-control" id="slugPost" name="slugPost" value="<?php echo ($query->slug) ?>">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="categoriaPost" class="form-label">Categoria</label>
-                            <input type="text" class="form-control" id="categoriaPost" name="categoriaPost" value="<?php echo ($query->category) ?>">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="yoastKeywords" class="form-label">Yoast SEO - Keywords</label>
-                            <input type="text" class="form-control" id="yoastKeywords" name="yoastKeywords" value="<?php echo ($query->yoast_keywords) ?>">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="yoastDescription" class="form-label">Yoast SEO - Description</label>
-                            <input type="text" class="form-control" id="yoastDescription" name="yoastDescription" value="<?php echo ($query->yoast_description) ?>">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mb-4">
-                            <label for="editor1" class="form-label">Conteúdo</label>
-                            <textarea id="editor1" class="form-control" name="conteudoPost" placeholder="Add Body">
-                                <?php echo $query->content_post ?>
-                            </textarea>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <label for="" class="form-label">Destaque</label>
-                            <br />
-                            <img class="img-fluid foto-destaque" width="400" src="<?php echo base_url('upload/blog/' . $query->imagem_destaque) ?>" alt="<?= $query->imagem_destaque ?>">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <button type="button" class="btn btn-outline-warning mb-3 btn-trocar"><i class="fas fa-exchange-alt"></i> Trocar foto</button>
-                            <button type="button" class="btn btn-outline-danger mb-3 btn-cancelar"><i class="fas fa-ban"></i> Cancelar</button>
-                            <br>
-                            <input type="file" name="imagemPost" class="form-control-file input-change-file hide" id="exampleFormControlFile1" required="" disabled="">
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3 mb-4">
-                        <input type="hidden" id="idPost" name="idPost" value="<?= $query->id ?>">
-                        <button type="submit" class="btn btn-success w-100">Editar Post</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+        <h1 class="h2"><i class="fas fa-laptop-code"></i> <?php echo $titulo_pagina ?></h1>
+
+    </div>
+
+
+
+    <section id="error-area">
+
+        <div class="row">
+
+            <div class="col-12 col-sm-12">
+
+                <?= validation_errors('<div class="alert alert-danger" role="alert">', '</div>') ?>
+
+                <?= $this->session->userdata('msg'); ?>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <div class="row">
+
+        <div class="col-12 col-sm-12 mb-4">
+
+            <form action="" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+
+                    <div class="col-4">
+
+                        <div class="mb-3">
+
+                            <label for="tituloImpressora" class="form-label">Nome da Impressora</label>
+
+                            <input type="text" class="form-control" id="tituloImpressora" name="tituloImpressora" value="<?php echo $query->nome; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="mb-3">
+
+                            <label for="categoriaPost" class="form-label">Categoria</label><br>
+
+                            <select name="categoria" id="categoria">
+                                <option value="">Teste</option>
+                                <option value="">Teste</option>
+                                <option value="">Teste</option>
+                                <option value="">Teste</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="cor" class="form-label">Cor/Mono</label>
+
+                            <input type="text" class="form-control" id="cor" name="cor" value="<?php echo $query->cor_mono; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="formatoPapel" class="form-label">Formato do Papel</label>
+
+                            <input type="text" class="form-control" id="formatoPapel" name="formatoPapel" value="<?php echo $query->formato_papel; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="memoria" class="form-label">Memória</label>
+
+                            <input type="text" class="form-control" id="memoria" name="memoria" value="<?php echo $query->memoria; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="resolucao" class="form-label">Resolução</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="resolucao" value="<?php echo $query->resolucao; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="linguagem" class="form-label">Linguagem de Impressão</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="linguagem" value="<?php echo $query->linguagem_impressao; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="entradaPapel" class="form-label">Entrada de Papel</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="entradaPapel" value="<?php echo $query->entrada_papel; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Saída de Papel</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="saidaPapel" value="<?php echo $query->saida_papel; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <div class="mb-4">
+
+                            <label for="editor1" class="form-label">Descrição</label>
+
+                            <textarea id="editor1" class="form-control" name="descricao" placeholder="Add Body"><?php echo $query->descricao; ?></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <div class="mb-3">
+
+                            <label for="imagemDestaque" class="form-label">Imagem Destaque</label>
+
+                            <br />
+ 
+                            <div class="thumb" onclick="selectImg()">
+                                <img src="<?php echo base_url('upload/impressoras/') ?><?php echo $query->imagem; ?>" id="img" class="img">
+
+                                <div class="remove" onclick="removeImg()"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+
+                            <input type="file" name="imagemDestaque" class="form-control-file" id="imgDestaque" onchange="readUrl(this)">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <button type="submit" class="btn btn-success mt-3 mb-3 w-100">Adicionar nova impressora</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </main>
