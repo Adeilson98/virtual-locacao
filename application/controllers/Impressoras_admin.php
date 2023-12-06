@@ -50,27 +50,30 @@
 
             if ($this->form_validation->run() == TRUE) {
 
-                $config['upload_path'] = 'upload/impressoras';
-
-                $config['allowed_types'] = 'jpg|png|jpeg';
-
-                $config['max_size'] = '5048';
-
-                $config['encrypt_name'] = TRUE;
+                $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 
 
-                $this->load->library('upload', $config);
+                if (empty($dados['send'])) {
+
+                    $arquivo = $_FILES['imagemDestaque'];
+
+                    for($cont = 0; $cont < count($arquivo['name']); $cont++) {
+
+                        $target = "./upload/impressoras/" . $arquivo['name'][$cont];
+
+                        move_uploaded_file($arquivo['tmp_name'][$cont], $target);
+
+                    }
+
+                    // $documento = $_FILES['documento'];
+
+                    // $target = "./upload/catalogo/" . $documento['name'];
+
+                    // move_uploaded_file($documento['tmp_name'], $target);
 
 
 
-                if (!$this->upload->do_upload('imagemDestaque')) {
-
-                    $this->session->set_flashdata('msg', '<div class="alert alert-danger">Erro! Por favor, verifique se a imagem está no formato correto e tente novamente.</div>');
-
-                    redirect('impressoras_admin/adicionarimpressora');
-
-                } else {
 
                     $inputAddImpressora['nome'] = $this->input->post('tituloImpressora');
 
@@ -90,19 +93,32 @@
 
                     $inputAddImpressora['saida_papel'] = $this->input->post('saidaPapel');
 
-                    $inputAddImpressora['saida_papel'] = $this->input->post('descricao');
+                    $inputAddImpressora['descricao'] = $this->input->post('descricao');
 
-                    $inputAddImpressora['imagem'] = $this->upload->data('file_name');
+                    $inputAddImpressora['imagem'] = $this->input->post('fileNames');
 
 
 
                     $this->impressora_model->addImpressora($inputAddImpressora);
 
-                    $this->session->set_flashdata('msg', '<div class="alert alert-success">Post adicionado com sucesso!</div>');
+                    $this->session->set_flashdata('msg', '<div class="alert alert-success">Impressora adicionada com sucesso!</div>');
 
                     redirect('impressoras_admin');
 
+    
+
+                } else {
+
+
+                    // $this->impressora_model->atualizarImpressora($inputEditPost, ['id' => $this->input->post('idPost')]);
+
+                    // $this->session->set_flashdata('msg', '<div class="alert alert-success">Post adicionado com sucesso!</div>');
+
+                    // redirect('impressoras_admin', 'refresh');
+
                 }
+
+            
 
             } else {
 
@@ -140,58 +156,68 @@
 
             if ($this->form_validation->run() == TRUE) {
 
-                $config['upload_path'] = 'upload/impressoras';
-
-                $config['allowed_types'] = 'jpg|png|jpeg';
-
-                $config['max_size'] = '5048';
-
-                $config['encrypt_name'] = TRUE;
+                $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 
 
-                $this->load->library('upload', $config);
+                if (empty($dados['send'])) {
 
+                    $arquivo = $_FILES['imagemDestaque'];
 
+                    for($cont = 0; $cont < count($arquivo['name']); $cont++) {
 
-                if (!$this->upload->do_upload('imagemDestaque')) {
+                        $target = "./upload/impressoras/" . $arquivo['name'][$cont];
 
-                    $this->session->set_flashdata('msg', '<div class="alert alert-danger">Erro! Por favor, verifique se a imagem está no formato correto e tente novamente.</div>');
+                        move_uploaded_file($arquivo['tmp_name'][$cont], $target);
 
-                    redirect('impressoras_admin/editarimpressora');
+                    }
 
-                } else {
+                    // $documento = $_FILES['documento'];
 
-                    $inputAddImpressora['nome'] = $this->input->post('tituloImpressora');
+                    // $target = "./upload/catalogo/" . $documento['name'];
 
-                    $inputAddImpressora['categoria'] = $this->input->post('categoria');
-
-                    $inputAddImpressora['cor_mono'] = $this->input->post('cor');
-
-                    $inputAddImpressora['formato_papel'] = $this->input->post('formatoPapel');
-
-                    $inputAddImpressora['memoria'] = $this->input->post('memoria');
-
-                    $inputAddImpressora['resolucao'] = $this->input->post('resolucao');
-
-                    $inputAddImpressora['linguagem_impressao'] = $this->input->post('linguagem');
-
-                    $inputAddImpressora['entrada_papel'] = $this->input->post('entradaPapel');
-
-                    $inputAddImpressora['saida_papel'] = $this->input->post('saidaPapel');
-
-                    $inputAddImpressora['saida_papel'] = $this->input->post('descricao');
-
-                    $inputAddImpressora['imagem'] = $this->upload->data('file_name');
+                    // move_uploaded_file($documento['tmp_name'], $target);
 
 
 
 
-                    $this->impressora_model->atualizarImpressora($inputEditPost, ['id' => $this->input->post('idPost')]);
+                    $inputEditImpressora['nome'] = $this->input->post('tituloImpressora');
+
+                    $inputEditImpressora['categoria'] = $this->input->post('categoria');
+
+                    $inputEditImpressora['cor_mono'] = $this->input->post('cor');
+
+                    $inputEditImpressora['formato_papel'] = $this->input->post('formatoPapel');
+
+                    $inputEditImpressora['memoria'] = $this->input->post('memoria');
+
+                    $inputEditImpressora['resolucao'] = $this->input->post('resolucao');
+
+                    $inputEditImpressora['linguagem_impressao'] = $this->input->post('linguagem');
+
+                    $inputEditImpressora['entrada_papel'] = $this->input->post('entradaPapel');
+
+                    $inputEditImpressora['saida_papel'] = $this->input->post('saidaPapel');
+
+                    $inputEditImpressora['descricao'] = $this->input->post('descricao');
+
+                    $inputEditImpressora['imagem'] = $this->input->post('fileNames');
+
+
+
+
+                    $this->impressora_model->atualizarImpressora($inputEditImpressora, ['id' => $this->input->post('id')]);
 
                     $this->session->set_flashdata('msg', '<div class="alert alert-success">Post adicionado com sucesso!</div>');
 
                     redirect('impressoras_admin', 'refresh');
+
+    
+
+                } else {
+
+
+                    
 
                 }
 
@@ -247,7 +273,7 @@
 
             $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">Post Apagado com Sucesso!</div>');
 
-            redirect('posts', 'refresh');
+            redirect('impressoras_admin', 'refresh');
 
         }
 

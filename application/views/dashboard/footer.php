@@ -20,6 +20,8 @@
 
 <script src="<?php echo base_url('assets/dashboard/js/image-preview.js') ?>"></script>
 
+<script src="<?php echo base_url('assets/dashboard/js/getImages.js') ?>"></script>
+
 
 
 <!-- Sortable Jquery -->

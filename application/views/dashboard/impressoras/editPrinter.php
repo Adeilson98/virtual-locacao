@@ -175,13 +175,17 @@
                                 <div class="remove" onclick="removeImg()"><i class="fas fa-trash-alt"></i></div>
                             </div>
 
-                            <input type="file" name="imagemDestaque" class="form-control-file" id="imgDestaque" onchange="readUrl(this)">
+                            <input type="file" name="imagemDestaque[]" class="form-control-file" id="imgDestaque" onchange="readUrl(this), handleFileSelect()">
 
                         </div>
 
                     </div>
 
                     <div class="col-12">
+
+                        <input type="hidden" id="fileNames" name="fileNames" value="<?php echo $query->imagem; ?>">
+
+                        <input type="hidden" name="id" value="<?php echo $query->id; ?>">
 
                         <button type="submit" class="btn btn-success mt-3 mb-3 w-100">Adicionar nova impressora</button>
 
