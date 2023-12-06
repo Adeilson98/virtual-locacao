@@ -10,6 +10,14 @@
 
             parent::__construct();
 
+            if (!$this->session->userdata('logado') == TRUE) {
+
+                $this->session->set_flashdata('erro_login', '<div class="alert alert-danger" role="alert">Você precisa realizar o login!</div>');
+    
+                redirect('login');
+    
+            }
+
             $this->load->model('impressora_model');
 
             $this->load->model('categoria_model');
