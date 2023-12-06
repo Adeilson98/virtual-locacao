@@ -55,10 +55,13 @@
                             <label for="categoriaPost" class="form-label">Categoria</label><br>
 
                             <select name="categoria" id="categoria">
-                                <option value="">Teste</option>
-                                <option value="">Teste</option>
-                                <option value="">Teste</option>
-                                <option value="">Teste</option>
+
+                                <?php foreach($categorias as $categoria) { ?>
+
+                                    <option value="<?php echo $categoria->nome; ?>"><?php echo $categoria->nome; ?></option>
+
+                                <?php } ?>
+
                             </select>
 
                         </div>

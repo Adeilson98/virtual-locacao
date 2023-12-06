@@ -12,6 +12,8 @@
 
             $this->load->model('impressora_model');
 
+            $this->load->model('categoria_model');
+
             $this->load->library('form_validation');
 
         }
@@ -42,6 +44,8 @@
         }
 
         public function adicionarimpressora() {
+
+            $data['categorias'] = $this->categoria_model->buscarCategorias();
 
 
 
@@ -146,7 +150,7 @@
 
         {
 
-
+            $data['categorias'] = $this->categoria_model->buscarCategorias();
 
             $data['query'] = $this->impressora_model->getImpressoraID($id);
 
