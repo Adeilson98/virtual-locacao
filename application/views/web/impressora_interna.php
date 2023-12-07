@@ -1,69 +1,81 @@
 <section class="__wrap">
+
+    <?php foreach($query as $content) { ?>
     
-    <h3>Teste</h3>
+        <h3><?php echo $content->nome; ?></h3>
 
-    <div class="dobra1">
+    <?php } ?>
 
-        <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
+    <?php foreach($query as $content) { ?>
 
-        <div class="descriptions">
-            <h1>Descrição</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet mauris vulputate, venenatis arcu nec, fringilla massa. 
-                Praesent id nisl vel erat lobortis lacinia. Vestibulum bibendum convallis blandit. Vivamus et arcu et quam sollicitudin consectetur sed egestas erat. 
-                Fusce non sapien ligula. Nam facilisis euismod ex eget vestibulum. Phasellus eu laoreet dui.</p>
+        <div class="dobra1">
 
-            <div class="downloads">
-                <a href="" class="btn-destaque">Baixar driver</a>
-                <a href="" class="btn-destaque">Baixar Manual</a>
-            </div>
-        </div>
+            <img src="<?php echo base_url('upload/impressoras/'); ?><?php echo $content->imagem; ?>">
 
-    </div>
+            <div class="descriptions">
+                <h1>Descrição</h1>
 
-    <div class="dobra2">
+                <p><?php echo $content->descricao; ?></p>
 
-        <h2>Informações técnicas</h2>
-
-        <div class="rows">
-
-            <div class="collumn">
-
-                <b>Cor / Mono</b>
-
-                <p>Teste</p>
-
-                <b>Formato de Papel</b>
-
-                <p>Teste</p>
-
-                <b>Memória (Padrão)</b>
-
-                <p>Teste</p>
-
-                <b>Resolução (DPI)</b>
-
-                <p>Teste</p>
-
-            </div>
-
-            <div class="collumn">
-
-                <b>Linguagem de Impressão</b>
-
-                <p>Teste</p>
-
-                <b>Entrada de Papel</b>
-
-                <p>Teste</p>
-
-                <b>Saida de Papel</b>
-
-                <p>Teste</p>
-
+                <div class="downloads">
+                    <a href="" class="btn-destaque">Baixar driver</a>
+                    <a href="" class="btn-destaque">Baixar Manual</a>
+                </div>
             </div>
 
         </div>
 
-    </div>
+    <?php } ?>
+
+
+    <?php foreach($query as $content) { ?>
+
+        <div class="dobra2">
+
+            <h2>Informações técnicas</h2>
+
+            <div class="rows">
+
+                <div class="collumn">
+
+                    <b>Cor / Mono</b>
+
+                    <p><?php echo $content->cor_mono; ?></p>
+
+                    <b>Formato de Papel</b>
+
+                    <p><?php echo $content->formato_papel; ?></p>
+
+                    <b>Memória (Padrão)</b>
+
+                    <p><?php echo $content->memoria; ?></p>
+
+                    <b>Resolução (DPI)</b>
+
+                    <p><?php echo $content->resolucao; ?></p>
+
+                </div>
+
+                <div class="collumn">
+
+                    <b>Linguagem de Impressão</b>
+
+                    <p><?php echo $content->linguagem_impressao; ?></p>
+
+                    <b>Entrada de Papel</b>
+
+                    <p><?php echo $content->entrada_papel; ?></p>
+
+                    <b>Saida de Papel</b>
+
+                    <p><?php echo $content->saida_papel; ?></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <?php } ?>
 
 </section>

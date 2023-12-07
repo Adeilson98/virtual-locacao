@@ -4,65 +4,20 @@
 
     <div class="flex-items">
         
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
 
-            <h3>Lexmark MX711</h3>
+        <?php foreach($impressoras as $impressora) { ?>
 
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
+            <div class="item">
+                <img src="<?php echo base_url('upload/impressoras/'); ?><?php echo $impressora->imagem; ?>">
 
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
-        
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
+                <h3><?php echo $impressora->nome; ?></h3>
 
-            <h3>Lexmark MX711</h3>
+                <p><?php echo substr($impressora->descricao, 0, 143); ?><?php echo '...'?></p>
 
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
+                <a href="<?php echo base_url('impressora/'); ?><?php echo $impressora->id; ?>" class="btn-destaque">Saiba mais</a>
+            </div>
 
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
-
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
-
-            <h3>Lexmark MX711</h3>
-
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
-
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
-
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
-
-            <h3>Lexmark MX711</h3>
-
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
-
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
-
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
-
-            <h3>Lexmark MX711</h3>
-
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
-
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
-
-        <div class="item">
-            <img src="<?php echo base_url('assets/site/images/lexmark-mx711.png'); ?>" alt="">
-
-            <h3>Lexmark MX711</h3>
-
-            <p>Apresentando a Impressora Lexmark MX711, uma verdadeira referência em desempenho e eficiência no mundo da impressão profissional...</p>
-
-            <a href="" class="btn-destaque">Saiba mais</a>
-        </div>
+        <?php }?>
 
     </div>
 

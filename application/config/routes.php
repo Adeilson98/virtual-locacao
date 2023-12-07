@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['impressoras'] = "Site/Impressoras";
-$route['impressora_interna'] = "Site/Impressora_interna";
+$route['impressora/:any'] = "Site/Impressora";

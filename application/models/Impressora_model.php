@@ -23,9 +23,9 @@
 
         }
 
-        public function getImpressoraById($slug = NULL) {
+        public function getImpressoraById($id = NULL) {
 
-            $this->db->where( 'slug', $slug );
+            $this->db->where( 'id', $id );
 
             return $this->db->get('impressoras')->result();
 

@@ -8,6 +8,8 @@
 
             parent::__construct();
 
+            $this->load->model('impressora_model');
+
         }
 
         public function index() {
@@ -28,7 +30,7 @@
 
             $data['titulo'] = 'Virtual - Impressoras';
 
-
+            $data['impressoras'] = $this->impressora_model->buscarImpressoras();
 
             $this->load->view('web/layout/header', $data);
 
@@ -38,9 +40,12 @@
 
         }
 
-        public function Impressora_interna() {
+        public function Impressora($id = NULL) {
 
-            $data['titulo'] = 'Placeholder';
+            $data['query']              = $this->impressora_model->getImpressoraById($this->uri->segment(2));
+
+            $data['titulo']             = $data['query'][0]->nome . ' - Virtual';
+
 
 
             $this->load->view('web/layout/header', $data);
