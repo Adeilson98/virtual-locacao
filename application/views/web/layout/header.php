@@ -15,7 +15,11 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/main.css'); ?>">
 
+    <link rel="stylesheet" href="<?php echo base_url('assets/site/css/home.css'); ?>">
+
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/header.css'); ?>">
+
+    <link rel="stylesheet" href="<?php echo base_url('assets/site/css/banner.css'); ?>">
 
     <!-- Font Awesome -->
 
@@ -26,7 +30,7 @@
     
     <header>
         <nav>
-            <img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo">
+            <a href="home"><img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo"></a>
 
             <a href="">Sobre</a>
 
