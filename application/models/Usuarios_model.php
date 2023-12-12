@@ -14,7 +14,7 @@ class Usuarios_model extends CI_Model
 
         if (is_array($dados)) {
 
-            $this->db->insert('usuarios', $dados);
+            $this->db->insert('app_usuarios', $dados);
 
         }
 
@@ -32,7 +32,7 @@ class Usuarios_model extends CI_Model
 
             $this->db->limit(1);
 
-            return $this->db->get('usuarios')->row();
+            return $this->db->get('app_usuarios')->row();
 
         }
 
@@ -46,7 +46,7 @@ class Usuarios_model extends CI_Model
 
         if (is_array($dados) && $condicao) {
 
-            $this->db->update('usuarios', $dados, $condicao);
+            $this->db->update('app_usuarios', $dados, $condicao);
 
         }
 
@@ -58,7 +58,7 @@ class Usuarios_model extends CI_Model
 
     {
 
-        return $this->db->get('usuarios')->result();
+        return $this->db->get('app_usuarios')->result();
 
     }
 
@@ -70,7 +70,7 @@ class Usuarios_model extends CI_Model
 
         if ($condicao) {
 
-            $this->db->delete('usuarios', $condicao);
+            $this->db->delete('app_usuarios', $condicao);
 
             return true;
 

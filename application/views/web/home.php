@@ -28,6 +28,11 @@
             <button>Enviar</button>
 
         </form>
+    
+    </div>
+
+    <div class="about-section">
+        
     </div>
 
 </section>
