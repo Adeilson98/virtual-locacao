@@ -1,0 +1,93 @@
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+footer iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+footer .dobra1 {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto -120px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+footer .dobra1 .block-information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+footer .dobra1 .block-information h4{
+    color: #f18a25;
+    font-weight: bolder;
+}
+
+footer .dobra1 .block-information h2 {
+    text-align: start;
+    margin: 0 0 30px;
+    font-size: 50px;
+}
+
+footer .dobra1 .block-information a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer .dobra1 #form-footer {
+    width: 380px;
+    background-color: #f18a25;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px;
+    border-radius: 30px;
+}
+
+footer .dobra1 #form-footer input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+
+footer .dobra1 #form-footer input:focus {
+    border: none;
+}
+
+footer .dobra1 #form-footer input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+footer .dobra1 #form-footer button {
+    height: 60px;
+    background-color: white;
+    color: #f18a25;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 260px;
+    transition: all .4s;
+}
+
+footer .dobra1 #form-footer button:hover {
+    width: 280px;
+}

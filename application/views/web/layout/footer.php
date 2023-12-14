@@ -1,4 +1,36 @@
 
+    <footer>
+        
+        <div class="dobra1">
+            <div class="block-information">
+                <h4>Deseja falar conosco?</h4>
+                <h2>Entre em contato <br> agora mesmo!</h2>
+
+                <!-- Numeros de Telefone -->
+
+                <a href="">Whatsapp: 00 00000-00000</a>
+                <a href="">Telefone: 00 00000-00000</a>
+                <a href="">Email: empresa@dominio.com.br</a>
+
+            </div>
+
+            <form action="" id="form-footer">
+
+                <input type="text" placeholder="Nome">
+
+                <input type="text" placeholder="Telefone">
+
+                <input type="text" placeholder="E-mail">
+
+                <input type="text" placeholder="Cidade">
+
+                <button>Enviar</button>
+
+            </form>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.812662291635!2d-47.32076602475116!3d-23.249903250223525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf504e9fb1db81%3A0x7eb138b83f985b17!2sR.%20Vit%C3%B3rio%20Fernando%20Leis%2C%20447%20-%20Vila%20Mariah%2C%20Itu%20-%20SP%2C%2013313-180!5e0!3m2!1spt-BR!2sbr!4v1702509171960!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
     <!-- Scripts -->
 
     <script src="<?php echo base_url('assets/site/js/slider.js'); ?>"></script>

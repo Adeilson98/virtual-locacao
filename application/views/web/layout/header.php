@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/header.css'); ?>">
 
+    <link rel="stylesheet" href="<?php echo base_url('assets/site/css/footer.css'); ?>">
+
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/banner.css'); ?>">
 
     <!-- Font Awesome -->
