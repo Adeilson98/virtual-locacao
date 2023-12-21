@@ -72,9 +72,8 @@
     font-size: 18px;
 }
 
-.about-section img {
-    width: 550px;
-    border-radius: 15px;
+.about-section video {
+    width: 530px;
 }
 
 .commitment-section {

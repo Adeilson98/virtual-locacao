@@ -4,7 +4,6 @@
         
         <div class="banner">
             <img src="<?php echo base_url('assets/site/images/banner1.jpg'); ?>">
-            <h2></h2>
         </div>
 
         <!-- <div class="banner">
@@ -15,7 +14,7 @@
     </div>
 
 
-    <div class="form-section">
+    <!-- <div class="form-section">
         <h2>Precisa alugar uma impressora <br> para a sua empresa?</h2>
         <p>Nos mande seu contato que retornaremos o mais breve possível!</p>
 
@@ -29,7 +28,7 @@
 
         </form>
     
-    </div>
+    </div> -->
 
     <div class="about-section">
 
@@ -45,13 +44,13 @@
 
         </div>
 
-        <img src="<?php echo base_url('assets/site/images/foto1.webp'); ?>">
+        <video src="<?php echo base_url('assets/site/videos/video-virtual.mp4'); ?>" controls></video>
         
     </div>
 
     <div class="commitment-section">
 
-        <img src="<?php echo base_url('assets/site/images/foto2.webp'); ?>">
+        <img src="<?php echo base_url('assets/site/images/foto1.webp'); ?>">
 
         <div class="flex-text">
             <h2>Nosso compromisso:</h2>
