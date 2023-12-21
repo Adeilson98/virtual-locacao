@@ -6,7 +6,7 @@
 
         public function buscarImpressoras() {
         
-            return $this->db->get('impressoras')->result();
+            return $this->db->get('app_impressoras')->result();
 
         }
 
@@ -18,7 +18,7 @@
 
                 $this->db->limit(1);
 
-                return $this->db->get('impressoras')->row();
+                return $this->db->get('app_impressoras')->row();
             }
 
         }
@@ -27,7 +27,7 @@
 
             $this->db->where( 'id', $id );
 
-            return $this->db->get('impressoras')->result();
+            return $this->db->get('app_impressoras')->result();
 
         }
 
@@ -35,7 +35,7 @@
 
             if(is_array($dados)) {
 
-                $this->db->insert('impressoras', $dados);
+                $this->db->insert('app_impressoras', $dados);
 
             }
             
@@ -45,7 +45,7 @@
 
             if ($id) {
 
-                $this->db->delete('impressoras', ['id' => $id]);
+                $this->db->delete('app_impressoras', ['id' => $id]);
 
             }
 
@@ -55,7 +55,7 @@
 
             if (is_array($dados) && is_array($condicao)) {
 
-                $this->db->update('impressoras', $dados, $condicao);
+                $this->db->update('app_impressoras', $dados, $condicao);
 
             }
 
