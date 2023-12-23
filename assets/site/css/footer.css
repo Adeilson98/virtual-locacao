@@ -91,3 +91,27 @@ footer .dobra1 #form-footer button {
 footer .dobra1 #form-footer button:hover {
     width: 280px;
 }
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .coluna1 img {
+    width: 20%;
+}
+
+.footer .coluna2 h4 {
+    color: #f18a25;
+    font-size: 20px;
+}
+
+.footer .coluna2 h6 {
+    margin: 0;
+    font-size: 18px;
+    color: #f18a25;
+}
