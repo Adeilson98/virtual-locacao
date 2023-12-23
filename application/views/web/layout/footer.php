@@ -59,13 +59,29 @@
             </div>
 
             <div class="coluna3">
+
+                <h4>Menu</h4>
+
+                <a href="#home">Home</a>
+
+                <a href="#sobre">Sobre</a>
+
+                <a href="">Serviços</a>
+
+                <a href="<?php echo base_url('impressoras/'); ?>">Impressoras</a>
+
+                <a href="#contato">Contato</a>
+
+            </div>
+
+            <div class="coluna4">
                 <h4>Nos acompanhe em nossas redes sociais!</h4>
 
                 <div class="social-medias">
 
-                    <a href=""><img src="<?php echo base_url('assets/site/images/instagram.png'); ?>" alt="Instagram"></a>
+                    <a href=""><img class="social-logo" src="<?php echo base_url('assets/site/images/instagram.png'); ?>" alt="Instagram"></a>
 
-                    <a href=""><img src="<?php echo base_url('assets/site/images/facebook.png'); ?>" alt="Facebook"></a>
+                    <a href=""><img class="social-logo" src="<?php echo base_url('assets/site/images/facebook.png'); ?>" alt="Facebook"></a>
 
                 </div>
                 

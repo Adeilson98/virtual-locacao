@@ -30,7 +30,7 @@
     <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
 
 </head>
-<body>
+<body id="home">
     
     <header>
         <nav>

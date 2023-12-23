@@ -101,6 +101,10 @@ footer .dobra1 #form-footer button:hover {
     align-items: flex-start;
 }
 
+.footer .coluna1 {
+    display: contents;
+}
+
 .footer .coluna1 img {
     width: 20%;
 }
@@ -108,10 +112,55 @@ footer .dobra1 #form-footer button:hover {
 .footer .coluna2 h4 {
     color: #f18a25;
     font-size: 20px;
+    margin: 0;
 }
 
 .footer .coluna2 h6 {
-    margin: 0;
-    font-size: 18px;
+    margin: 15px 0;
+    font-size: 16px;
     color: #f18a25;
+}
+
+.footer .coluna2 a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.footer .coluna3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .coluna3 h4 {
+    color: #f18a25;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.footer .coluna3 a {
+    text-decoration: none;
+    color: #808080;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.footer .coluna4 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer .coluna4 h4 {
+    color: #f18a25;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.footer .coluna4 .social-medias {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .coluna4 .social-medias .social-logo {
+    margin: 0 10px;
 }
