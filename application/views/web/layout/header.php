@@ -42,6 +42,6 @@
 
             <a href="<?php echo base_url('impressoras/'); ?>">Impressoras</a>
 
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>

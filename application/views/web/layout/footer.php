@@ -1,7 +1,7 @@
 
     <footer>
         
-        <div class="dobra1">
+        <div class="dobra1" id="contato">
             <div class="block-information">
                 <h4>Deseja falar conosco?</h4>
                 <h2>Entre em contato <br> agora mesmo!</h2>
