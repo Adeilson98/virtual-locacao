@@ -3,6 +3,14 @@ header {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    position: relative;
+}
+
+@media(max-width: 428px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
 }
 
 header nav {
@@ -10,6 +18,23 @@ header nav {
     justify-content: center;
     align-items: center;
     height: 100%;
+    position: relative;
+}
+
+@media(max-width: 428px) {
+    header nav {
+        flex-direction: column;
+        position: fixed;
+        z-index: 10;
+        background-color: #f18a25;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(150%)
+    }
+
+    header nav.__active {
+        transform: translateX(0);
+    }
 }
 
 header nav .brand {
@@ -22,10 +47,50 @@ header nav .logo {
     margin-right: 750px;
 }
 
+@media(max-width: 428px) {
+    header nav .brand {
+        display: none;
+    }
+}
+
 header nav a:not(.brand) {
     text-decoration: none;
     font-size: 18px;
     margin: 0 8px;
     color: #f18a25;
     font-weight: bold;
+}
+
+@media(max-width: 428px) {
+    header nav a:not(.brand) {
+        color: white;
+        margin: 15px 0;
+    }
+}
+
+
+
+/* menu mobile */
+
+header .menu-mobile {
+    display: none;
+}
+
+@media(max-width: 428px) {
+    header .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 60px;
+    }
+
+    header .menu-mobile a {
+        width: 60px;
+    }
+
+    header .menu-mobile a img {
+        width: 100%;
+    }
 }

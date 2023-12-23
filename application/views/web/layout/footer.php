@@ -66,7 +66,7 @@
 
                 <a href="#sobre">Sobre</a>
 
-                <a href="">Serviços</a>
+                <!-- <a href="">Serviços</a> -->
 
                 <a href="<?php echo base_url('impressoras/'); ?>">Impressoras</a>
 
@@ -93,6 +93,8 @@
     <!-- Scripts -->
     
     <script src="<?php echo base_url('assets/site/js/smooth-scroll.js'); ?>"></script>
+
+    <script src="<?php echo base_url('assets/site/js/hamburger-menu.js'); ?>"></script>
 
 </body>
 </html>
