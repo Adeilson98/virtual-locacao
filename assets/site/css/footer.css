@@ -10,19 +10,40 @@ footer iframe {
     border: 0;
 }
 
+@media(max-width: 390px) {
+    footer iframe {
+        height: 300px;
+    }
+}
+
 footer .dobra1 {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto -120px;
     justify-content: space-between;
     align-items: flex-start;
 
 }
 
+@media(max-width: 389px) {
+    footer .dobra1 {
+        max-width: 390px;
+        padding: 0 15px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
 footer .dobra1 .block-information {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+}
+
+@media(max-width: 390px) {
+    footer .dobra1 .block-information {
+        margin-top: 30px;
+    }
 }
 
 footer .dobra1 .block-information h4{
@@ -54,6 +75,13 @@ footer .dobra1 #form-footer {
     align-items: center;
     padding: 100px 80px;
     border-radius: 30px;
+}
+
+@media(max-width: 390px) {
+    footer .dobra1 #form-footer {
+        max-width:390px;
+        padding: 30px 15px;
+    }
 }
 
 footer .dobra1 #form-footer input {
@@ -93,12 +121,20 @@ footer .dobra1 #form-footer button:hover {
 }
 
 .footer {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+@media(max-width: 390px) {
+    .footer {
+        max-width: 390px;
+        padding: 0 15px;
+        flex-direction: column;
+    }
 }
 
 .footer .coluna1 {

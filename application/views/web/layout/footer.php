@@ -8,9 +8,9 @@
 
                 <!-- Numeros de Telefone -->
 
-                <a href="">Whatsapp: 00 00000-00000</a>
-                <a href="">Telefone: 00 00000-00000</a>
-                <a href="">Email: empresa@dominio.com.br</a>
+                <a href="https://wa.me/5511940292425" target = "_blank">Whatsapp: 11 9 4029-2425</a>
+                <a href="tel:1134135602">Telefone: (11) 3413-5602</a>
+                <a href="mailto:comercial@virtuallocacao.com.br?subject=Quero saber mais sobre locação de impressoras">Email: comercial@virtuallocacao.com.br</a>
 
             </div>
 
@@ -46,13 +46,13 @@
                 <div class="flex-hours">
 
                     <h6>Whatsapp</h6>
-                    <a href="">00 0 0000-0000</a>
+                    <a href="https://wa.me/5511940292425" target = "_blank">11 9 4029-2425</a>
 
-                    <h6>Whatsapp</h6>
-                    <a href="">00 0 0000-0000</a>
+                    <h6>Telefone</h6>
+                    <a href="tel:1134135602">(11) 3413-5602</a>
 
                     <h6>E-mail</h6>
-                    <a href="">empresa@dominio.com.br</a>
+                    <a href="mailto:comercial@virtuallocacao.com.br?subject=Quero saber mais sobre locação de impressoras">comercial@virtuallocacao.com.br</a>
 
                 </div>
 

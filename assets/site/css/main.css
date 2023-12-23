@@ -6,7 +6,7 @@ body {
 
 @media(max-width: 428px) {
     body {
-        width: 100%;
+        max-width: 428px;
         position: relative;
     }
 }
@@ -16,7 +16,7 @@ section {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;;
     text-align: center;
     margin-top: 30px;
     font-size: 30px;
@@ -79,7 +79,7 @@ h2 {
 /* Impressoras Interna */
 
 .__wrap {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
