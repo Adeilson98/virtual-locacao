@@ -34,9 +34,9 @@
     
     <header>
         <nav>
-            <a href="home"><img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo"></a>
+            <a href="../" class="brand"><img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo"></a>
 
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
 
             <a href="">Serviços</a>
 

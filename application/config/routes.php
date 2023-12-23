@@ -53,6 +53,6 @@ $route['default_controller'] = 'Site/';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['home'] = 'Site/';
+$route[''] = 'Site/';
 $route['impressoras'] = "Site/Impressoras";
 $route['impressora/:any'] = "Site/Impressora";

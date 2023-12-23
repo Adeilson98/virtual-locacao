@@ -34,7 +34,7 @@
     
     </div> -->
 
-    <div class="about-section">
+    <div class="about-section" id="sobre">
 
         <div class="flex-text">
 

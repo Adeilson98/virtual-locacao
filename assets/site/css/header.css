@@ -12,13 +12,17 @@ header nav {
     height: 100%;
 }
 
+header nav .brand {
+    display: contents;
+}
+
 header nav .logo {
     width: 100px;
     height: 70px;
     margin-right: 750px;
 }
 
-header nav a {
+header nav a:not(.brand) {
     text-decoration: none;
     font-size: 18px;
     margin: 0 8px;
