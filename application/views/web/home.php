@@ -1,5 +1,9 @@
 <section>
 
+    <div class="whatsapp-button">
+        <a href=""><img src="<?php echo base_url('assets/site/images/whatsapp-logo.png'); ?>" alt="Logo Whatsapp"></a>
+    </div>
+
     <div class="banner-container">
         
         <div class="banner">

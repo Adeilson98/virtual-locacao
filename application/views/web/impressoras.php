@@ -1,4 +1,8 @@
 <section>
+    
+    <div class="whatsapp-button">
+        <a href=""><img src="<?php echo base_url('assets/site/images/whatsapp-logo.png'); ?>" alt="Logo Whatsapp"></a>
+    </div>
 
     <h2>Confira as nossas impressoras <br> disponíveis para locação!</h2>
 

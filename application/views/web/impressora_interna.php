@@ -1,5 +1,9 @@
 <section class="__wrap">
 
+    <div class="whatsapp-button">
+        <a href=""><img src="<?php echo base_url('assets/site/images/whatsapp-logo.png'); ?>" alt="Logo Whatsapp"></a>
+    </div>
+
     <?php foreach($query as $content) { ?>
     
         <h3><?php echo $content->nome; ?></h3>

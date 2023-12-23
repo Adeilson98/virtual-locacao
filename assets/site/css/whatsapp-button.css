@@ -1,0 +1,16 @@
+.whatsapp-button {
+    width: 100%;
+}
+
+.whatsapp-button a {
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whatsapp-button a img {
+    width: 10%;
+}
