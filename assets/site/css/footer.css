@@ -22,14 +22,15 @@ footer .dobra1 {
     margin: 0 auto -120px;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 
 }
 
-@media(max-width: 389px) {
+@media(max-width: 390px) {
     footer .dobra1 {
-        max-width: 390px;
+        max-width: 390px !important;
         padding: 0 15px;
-        flex-direction: column;
+        flex-direction: column !important;
         margin: 0 auto;
     }
 }
@@ -80,7 +81,9 @@ footer .dobra1 #form-footer {
 @media(max-width: 390px) {
     footer .dobra1 #form-footer {
         max-width:390px;
+        width: 310px;
         padding: 30px 15px;
+        margin: 0 auto 30px;
     }
 }
 

@@ -1,5 +1,4 @@
 .about-section {
-    max-width: 1200px;
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
@@ -51,7 +50,6 @@
 }
 
 .commitment-section {
-    max-width: 1200px;
     margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;

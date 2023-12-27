@@ -1,16 +1,17 @@
-<section>
+<div class="whatsapp-button">
+    <a href="https://wa.me/5511940292425" target = "_blank"><img src="<?php echo base_url('assets/site/images/whatsapp-logo.png'); ?>" alt="Logo Whatsapp"></a>
+</div>
 
-    <div class="whatsapp-button">
-        <a href="https://wa.me/5511940292425" target = "_blank"><img src="<?php echo base_url('assets/site/images/whatsapp-logo.png'); ?>" alt="Logo Whatsapp"></a>
+<div class="banner-container">
+    
+    <div class="banner">
+        <h2>Você cuida das <span>grandes idéias</span> na sua empresa <br> Enquanto nós cuidamos das <span>melhores impressões</span></h2>
     </div>
 
-    <div class="banner-container">
-        
-        <div class="banner">
-            <h2>Você cuida das <span>grandes ideas</span> na sua empresa <br> Enquanto nos cuidamos das <span>melhores impressões</span></h2>
-        </div>
+</div>
 
-    </div>
+
+<section id="home-section">
 
     <div class="about-section" id="sobre">
 
