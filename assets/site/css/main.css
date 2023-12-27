@@ -140,3 +140,26 @@ h2 {
 .dobra2 .rows .collumn p {
     color: #808080;
 }
+
+@media(max-width: 428px) {
+    #impressoras {
+        padding-top: 50px;
+    }
+
+    .__wrap {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .flex-items {
+        width: 100%;
+    }
+
+    .flex-items .item {
+        width: 295px;
+    }
+
+    .flex-items .item img {
+        width: 100%;
+    }
+}
