@@ -1,16 +1,17 @@
 .whatsapp-button {
     width: 100%;
+    position: relative;
 }
 
 .whatsapp-button a {
-    position: fixed;
-    z-index: 15;
-    bottom: 50px;
-    right: 50px;
     display: flex;
     justify-content: flex-end;
 }
 
 .whatsapp-button a img {
-    width: 10%;
+    width: 8%;
+    position: fixed;
+    z-index: 15;
+    bottom: 50px;
+    right: 50px;
 }

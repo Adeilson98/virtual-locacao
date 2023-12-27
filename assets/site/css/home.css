@@ -4,34 +4,13 @@
     justify-content: space-between;
 }
 
-@media(max-width: 428px) {
-    .about-section {
-        max-width: 428px;
-        padding: 0 15px;
-        flex-direction: column;
-        margin: 30px auto;
-    }
-}
-
 .about-section .flex-text {
     width: 450px;
-}
-
-@media(max-width: 428px) {
-    .about-section .flex-text {
-        width: 100%;
-    }
 }
 
 .about-section .flex-text h2 {
     text-align: start;
     font-size: 40px;
-}
-
-@media(max-width: 428px) {
-    .about-section .flex-text h2 {
-        font-size: 35px;
-    }
 }
 
 .about-section .flex-text p {
@@ -41,37 +20,14 @@
 .about-section video {
     width: 530px;
 }
-
-@media(max-width: 428px) {
-    .about-section video {
-        width: 100%;
-        height: 300px;
-    }
-}
-
 .commitment-section {
     margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;
 }
 
-@media(max-width: 428px) {
-    .commitment-section {
-        max-width: 428px;
-        padding: 15px;
-        margin: 0 auto 30px;
-        flex-direction: column-reverse;
-    }
-}
-
 .commitment-section .flex-text {
     width: 450px;
-}
-
-@media(max-width: 428px) {
-    .commitment-section .flex-text {
-        width: 100%;
-    }
 }
 
 .commitment-section .flex-text h2 {
@@ -88,13 +44,44 @@
     border-radius: 15px;
 }
 
+.commitment-section .flex-text ul li b {
+    color: #f18a25;
+}
+
 @media(max-width: 428px) {
+    .about-section {
+        max-width: 428px;
+        padding: 0 15px;
+        flex-direction: column;
+        margin: 30px auto;
+    }
+
+    .about-section .flex-text {
+        width: 100%;
+    }
+
+    .about-section .flex-text h2 {
+        font-size: 35px;
+    }
+
+    .about-section video {
+        width: 100%;
+        height: 300px;
+    }
+
+    .commitment-section {
+        max-width: 428px;
+        padding: 15px;
+        margin: 0 auto 30px;
+        flex-direction: column-reverse;
+    }
+
+    .commitment-section .flex-text {
+        width: 100%;
+    }
+
     .commitment-section img {
         width: 100%;
         height: 350px;
     }
-}
-
-.commitment-section .flex-text ul li b {
-    color: #f18a25;
 }

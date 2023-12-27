@@ -10,12 +10,6 @@ footer iframe {
     border: 0;
 }
 
-@media(max-width: 390px) {
-    footer iframe {
-        height: 300px;
-    }
-}
-
 footer .dobra1 {
     display: flex;
     max-width: 1200px;
@@ -26,25 +20,10 @@ footer .dobra1 {
 
 }
 
-@media(max-width: 390px) {
-    footer .dobra1 {
-        max-width: 390px !important;
-        padding: 0 15px;
-        flex-direction: column !important;
-        margin: 0 auto;
-    }
-}
-
 footer .dobra1 .block-information {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-}
-
-@media(max-width: 390px) {
-    footer .dobra1 .block-information {
-        margin-top: 30px;
-    }
 }
 
 footer .dobra1 .block-information h4{
@@ -76,15 +55,6 @@ footer .dobra1 #form-footer {
     align-items: center;
     padding: 100px 80px;
     border-radius: 30px;
-}
-
-@media(max-width: 390px) {
-    footer .dobra1 #form-footer {
-        max-width:390px;
-        width: 310px;
-        padding: 30px 15px;
-        margin: 0 auto 30px;
-    }
 }
 
 footer .dobra1 #form-footer input {
@@ -130,14 +100,6 @@ footer .dobra1 #form-footer button:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-@media(max-width: 390px) {
-    .footer {
-        max-width: 390px;
-        padding: 0 15px;
-        flex-direction: column;
-    }
 }
 
 .footer .coluna1 {
@@ -202,4 +164,43 @@ footer .dobra1 #form-footer button:hover {
 
 .footer .coluna4 .social-medias .social-logo {
     margin: 0 10px;
+}
+
+@media all and (max-width: 480px) {
+    footer iframe {
+        height: 300px;
+    }
+
+    footer .dobra1 {
+        padding:0 15px;
+        flex-direction: column !important;
+        margin: 0 auto;
+    }
+
+    footer .dobra1 .block-information {
+        margin-top: 30px;
+    }
+
+    footer .dobra1 #form-footer {
+        max-width:390px;
+        width: 310px;
+        padding: 30px 15px;
+        margin: 0 auto 30px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+
+    .footer .coluna1 img {
+        margin: 0 auto 30px;
+        width: 40%;
+    }
+
+    .footer .coluna2, .footer .coluna3, .footer .coluna4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
