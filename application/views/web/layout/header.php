@@ -47,7 +47,7 @@
         </div>
 
         <nav>
-            <a href="../" class="brand"><img src="<?php echo base_url('assets/site/images/logo-virtual.png') ?>" alt="Logo" class="logo"></a>
+            <a href="../" class="brand"><img src="<?php echo base_url('assets/site/images/new-logo.png') ?>" alt="Logo" class="logo"></a>
 
             <a href="#sobre">Sobre</a>
 

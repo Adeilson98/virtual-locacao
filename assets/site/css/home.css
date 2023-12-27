@@ -24,6 +24,7 @@
     margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .commitment-section .flex-text {
