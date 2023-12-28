@@ -10,12 +10,15 @@
 
             $this->load->model('impressora_model');
 
+            $this->load->model('drivers_model');
+
         }
 
         public function index() {
 
             $data['titulo'] = 'Virtual Locação';
 
+            $data['drivers'] = $this->drivers_model->listarDrivers();
             
 
             $this->load->view('web/layout/header', $data);

@@ -96,5 +96,7 @@
 
     <script src="<?php echo base_url('assets/site/js/hamburger-menu.js'); ?>"></script>
 
+    <script src="<?php echo base_url('assets/site/js/submenu.js'); ?>"></script>
+
 </body>
 </html>

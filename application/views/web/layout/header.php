@@ -56,5 +56,22 @@
             <a href="<?php echo base_url('impressoras/'); ?>">Impressoras</a>
 
             <a href="#contato">Contato</a>
+
+            <div id="drop">
+
+                <a href="#" class="drivers">Baixar Drivers</a>
+
+                <ul class="submenu">
+
+                    <?php foreach($drivers as $driver) { ?>
+
+                        <li><a href="<?php echo base_url('upload/drivers/'); ?><?php echo $driver->driver; ?>"><?php echo $driver->nome; ?></a></li>
+
+                    <?php } ?>
+
+                </ul>
+
+            </div>
+
         </nav>
     </header>
