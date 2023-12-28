@@ -18,7 +18,7 @@ class Login_model extends CI_Model
 
             $this->db->limit(1);
 
-            $query = $this->db->get('usuarios');
+            $query = $this->db->get('app_usuarios');
 
 
 
