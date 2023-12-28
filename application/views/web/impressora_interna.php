@@ -21,10 +21,6 @@
 
                 <p><?php echo $content->descricao; ?></p>
 
-                <div class="downloads">
-                    <a href="" class="btn-destaque">Baixar driver</a>
-                    <a href="" class="btn-destaque">Baixar Manual</a>
-                </div>
             </div>
 
         </div>
