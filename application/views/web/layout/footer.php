@@ -98,5 +98,7 @@
 
     <script src="<?php echo base_url('assets/site/js/submenu.js'); ?>"></script>
 
+    <script src="<?php echo base_url('assets/site/js/lazy-paragraph.js'); ?>"></script>
+
 </body>
 </html>

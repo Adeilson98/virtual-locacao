@@ -5,7 +5,7 @@
 <div class="banner-container">
     
     <div class="banner">
-        <h2>Você cuida das <span>grandes idéias</span> na sua empresa <br> Enquanto nós cuidamos das <span>melhores impressões</span></h2>
+        <h2 id="lazy-paragraph">Você cuida das <span>grandes idéias</span> na sua empresa <br> Enquanto nós cuidamos das <span>melhores impressões</span></h2>
     </div>
 
 </div>
