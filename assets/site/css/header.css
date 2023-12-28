@@ -109,8 +109,8 @@ header nav #drop .submenu li {
 }
 
 @media(max-width: 428px) {
-    header nav .drop .drivers {
-        color: #f18a25;
+    header nav #drop .drivers {
+        color: #f18a25 !important;
         text-decoration: none;
         font-weight: bolder;
         background-color: white;
@@ -123,6 +123,10 @@ header nav #drop .submenu li {
         position: relative;
         bottom: -5px;
         margin-right: 5px;
+    }
+
+    header nav #drop .submenu .link {
+        color: #f18a25 !important;
     }
 }
 

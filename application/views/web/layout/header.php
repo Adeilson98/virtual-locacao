@@ -67,7 +67,7 @@
 
                     <?php foreach($drivers as $driver) { ?>
 
-                        <li><a href="<?php echo base_url('upload/drivers/'); ?><?php echo $driver->driver; ?>"><?php echo $driver->nome; ?></a></li>
+                        <li><a class="link" href="<?php echo base_url('upload/drivers/'); ?><?php echo $driver->driver; ?>"><?php echo $driver->nome; ?></a></li>
 
                     <?php } ?>
 
