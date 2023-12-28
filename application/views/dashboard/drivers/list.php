@@ -46,7 +46,7 @@
 
                             <td><?= $driver->nome ?></td>
 
-                            <td><?= $driver->nome ?></td>
+                            <td><a id="download" href="<?php echo base_url('upload/drivers/'); ?><?php echo $driver->driver; ?>" target="_blank" download><?php echo $driver->nome?></a></td>
 
                             <td class="text-center">
 

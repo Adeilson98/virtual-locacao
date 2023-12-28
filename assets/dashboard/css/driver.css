@@ -14,3 +14,12 @@
 .block-driver input {
     display: none;
 }
+
+#download {
+    text-decoration: none;
+    display: flex;
+}
+
+#download::before {
+    content: url('../images/download-da-nuvem.png');
+}
