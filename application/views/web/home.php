@@ -25,6 +25,8 @@
             Ao longo dos anos, aprimoramos nossa expertise, adaptando-nos às mudanças tecnológicas e às crescentes demandas empresariais. Investimos em equipamentos de última geração para assegurar que sua empresa alcance níveis inigualáveis de eficiência, agilidade e controle nos processos de impressão.
             </p>
 
+            <b style = "color: #f18a25;">Assista o vídeo ao lado para ter um resumo sobre nós</b>
+
         </div>
 
         <video src="<?php echo base_url('assets/site/videos/video-virtual.mp4'); ?>" controls></video>
