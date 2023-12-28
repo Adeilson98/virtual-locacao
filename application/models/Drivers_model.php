@@ -10,6 +10,16 @@
 
         }
 
+        public function adicionarDriver($dados = NULL) {
+
+            if(is_array($dados)) {
+
+                $this->db->insert('app_drivers', $dados);
+
+            }
+
+        }
+
     }
 
 ?>

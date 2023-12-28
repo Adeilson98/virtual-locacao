@@ -22,6 +22,8 @@
 
 <script src="<?php echo base_url('assets/dashboard/js/getImages.js') ?>"></script>
 
+<script src="<?php echo base_url('assets/dashboard/js/getDriver.js') ?>"></script>
+
 
 
 <!-- Sortable Jquery -->

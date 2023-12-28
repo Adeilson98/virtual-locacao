@@ -8,7 +8,7 @@
 
             <div class="btn-group me-2">
 
-                <?php echo anchor('categorias/adicionarcategoria', '<i class="fas fa-plus-circle"></i> <span>Novo Driver</span>', array('class' => 'btn btn-outline-success')) ?>
+                <?php echo anchor('drivers/adicionardriver', '<i class="fas fa-plus-circle"></i> <span>Novo Driver</span>', array('class' => 'btn btn-outline-success')) ?>
 
             </div>
 

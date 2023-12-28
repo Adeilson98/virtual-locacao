@@ -1,0 +1,16 @@
+.block-driver {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-driver label {
+    cursor: pointer;
+}
+
+.block-driver label img {
+    width: 20%;
+}
+
+.block-driver input {
+    display: none;
+}
