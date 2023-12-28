@@ -6,7 +6,7 @@
 
         public function buscarCategorias() {
         
-            return $this->db->get('categorias')->result();
+            return $this->db->get('app_categorias')->result();
 
         }
 
@@ -18,7 +18,7 @@
 
                 $this->db->limit(1);
 
-                return $this->db->get('categorias')->row();
+                return $this->db->get('app_categorias')->row();
             }
 
         }
@@ -27,7 +27,7 @@
 
             $this->db->where( 'slug', $slug );
 
-            return $this->db->get('categorias')->result();
+            return $this->db->get('app_categorias')->result();
 
         }
 
@@ -35,7 +35,7 @@
 
             if(is_array($dados)) {
 
-                $this->db->insert('categorias', $dados);
+                $this->db->insert('app_categorias', $dados);
 
             }
             
@@ -45,7 +45,7 @@
 
             if ($id) {
 
-                $this->db->delete('categorias', ['id' => $id]);
+                $this->db->delete('app_categorias', ['id' => $id]);
 
             }
 
@@ -55,7 +55,7 @@
 
             if (is_array($dados) && is_array($condicao)) {
 
-                $this->db->update('categorias', $dados, $condicao);
+                $this->db->update('app_categorias', $dados, $condicao);
 
             }
 
