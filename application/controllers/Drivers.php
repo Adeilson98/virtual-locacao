@@ -160,6 +160,35 @@
 
         }
 
+        public function deletardriver($id = NULL) {
+
+            if(!$id) {
+
+                $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Você deve selecionar um Driver</div>');
+
+                redirect('drivers', 'refresh');
+
+            }
+
+
+            $query = $this->drivers_model->getDriverID($id);
+
+
+            if(!$query) {
+
+                $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Driver não encontrado</div>');
+
+            }
+
+
+            $this->drivers_model->apagarDriver($query->id);
+
+            $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">Driver Apagado com Sucesso!</div>');
+
+            redirect('drivers', 'refresh');
+
+        }
+
     }
 
 ?>

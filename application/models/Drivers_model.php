@@ -44,6 +44,16 @@
 
         }
 
+        public function apagarDriver($id = NULL) {
+
+            if($id) {
+
+                $this->db->delete('app_drivers', ['id' => $id]);
+
+            }
+
+        }
+
     }
 
 ?>
