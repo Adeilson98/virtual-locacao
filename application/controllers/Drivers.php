@@ -104,6 +104,62 @@
 
         }
 
+        public function editardriver($id) {
+
+            $data['query'] = $this->drivers_model->getDriverID($id);
+
+            $this->form_validation->set_rules('tituloDriver', 'NOME', 'required', array('required' => 'O Campo nome é obrigatório'));
+
+
+            if($this->form_validation->run() == TRUE) {
+
+                $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+                if(empty($dados['send'])) {
+
+                    $arquivo = $_FILES['driver'];
+
+                    for($cont = 0; $cont < count($arquivo['name']); $cont++) {
+
+                        $target = "./upload/drivers/" . $arquivo['name'][$cont];
+
+                        move_uploaded_file($arquivo['tmp_name'][$cont], $target);
+
+                    }
+
+                    $inputEditDriver['nome'] = $this->input->post('tituloDriver');
+
+                    $inputEditDriver['driver'] = $this->input->post('driverFile');
+
+
+                    $this->drivers_model->editarDriver($inputEditDriver, ['id' => $this->input->post('id')]);
+
+                    $this->session->set_flashdata('msg', '<div class="alert alert-success">Driver editado com sucesso!</div>');
+
+                    redirect('drivers');
+
+                } else {
+
+                    $this->session->set_flashdata('msg', '<div class="alert alert-success">Erro ao editar o Driver</div>');
+                
+                }
+
+            } else {
+
+                $data['titulo_site'] = 'Gerenciador';
+
+                $data['titulo_pagina'] = 'Editar Driver';
+
+                $this->load->view('dashboard/header', $data);
+
+                $this->load->view('dashboard/drivers/edit');
+
+                $this->load->view('dashboard/footer');
+
+            }
+
+        }
+
     }
 
 ?>
