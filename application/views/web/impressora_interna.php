@@ -46,29 +46,37 @@
 
                     <p><?php echo $content->formato_papel; ?></p>
 
-                    <b>Memória (Padrão)</b>
+                    <b>Velocidade de Impressão</b>
 
-                    <p><?php echo $content->memoria; ?></p>
+                    <p><?php echo $content->velocidade_impressao; ?></p>
 
-                    <b>Resolução (DPI)</b>
+                    <b>Frente e Verso Automático</b>
 
-                    <p><?php echo $content->resolucao; ?></p>
+                    <p><?php echo $content->frente_verso_automatico; ?></p>
+                    
+                    <b>Digitalização em Rede</b>
+
+                    <p><?php echo $content->digitalizacao_rede; ?></p>
 
                 </div>
 
                 <div class="collumn">
 
-                    <b>Linguagem de Impressão</b>
+                    <b>Alimentação Automática</b>
 
-                    <p><?php echo $content->linguagem_impressao; ?></p>
+                    <p><?php echo $content->alimentacao_automatica; ?></p>
 
-                    <b>Entrada de Papel</b>
+                    <b>Conectividade</b>
 
-                    <p><?php echo $content->entrada_papel; ?></p>
+                    <p><?php echo $content->conectividade; ?></p>
 
-                    <b>Saida de Papel</b>
+                    <b>Ciclo Mensal</b>
 
-                    <p><?php echo $content->saida_papel; ?></p>
+                    <p><?php echo $content->ciclo_mensal; ?></p>
+
+                    <b>Rendimento insumos</b>
+
+                    <p><?php echo $content->rendimento_insumos; ?></p>
 
                 </div>
 

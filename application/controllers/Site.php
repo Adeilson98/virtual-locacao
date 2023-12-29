@@ -35,6 +35,8 @@
 
             $data['impressoras'] = $this->impressora_model->buscarImpressoras();
 
+            $data['drivers'] = $this->drivers_model->listarDrivers();
+
             $this->load->view('web/layout/header', $data);
 
             $this->load->view('web/impressoras');
@@ -48,6 +50,8 @@
             $data['query']              = $this->impressora_model->getImpressoraById($this->uri->segment(2));
 
             $data['titulo']             = $data['query'][0]->nome . ' - Virtual';
+
+            $data['drivers'] = $this->drivers_model->listarDrivers();
 
 
 
