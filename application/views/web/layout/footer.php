@@ -14,15 +14,15 @@
 
             </div>
 
-            <form action="" id="form-footer">
+            <form action="contato/sendemail" id="form-footer">
 
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" name="nome">
 
-                <input type="text" placeholder="Telefone">
+                <input type="text" placeholder="Telefone" name="telefone">
 
-                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="E-mail" name="email">
 
-                <input type="text" placeholder="Cidade">
+                <input type="text" placeholder="Cidade" name="cidade">
 
                 <button>Enviar</button>
 

@@ -96,21 +96,9 @@
 
                         <div class="mb-3">
 
-                            <label for="memoria" class="form-label">Memória</label>
+                            <label for="memoria" class="form-label">Velocidade de Impressão</label>
 
-                            <input type="text" class="form-control" id="memoria" name="memoria">
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <div class="mb-3">
-
-                            <label for="resolucao" class="form-label">Resolução</label>
-
-                            <input type="text" class="form-control" id="resolucao" name="resolucao">
+                            <input type="text" class="form-control" id="memoria" name="velocidade_impressao">
 
                         </div>
 
@@ -120,21 +108,9 @@
 
                         <div class="mb-3">
 
-                            <label for="linguagem" class="form-label">Linguagem de Impressão</label>
+                            <label for="resolucao" class="form-label">Frente e Verso Automático</label>
 
-                            <input type="text" class="form-control" id="resolucao" name="linguagem">
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <div class="mb-3">
-
-                            <label for="entradaPapel" class="form-label">Entrada de Papel</label>
-
-                            <input type="text" class="form-control" id="resolucao" name="entradaPapel">
+                            <input type="text" class="form-control" id="resolucao" name="frente_verso">
 
                         </div>
 
@@ -144,9 +120,57 @@
 
                         <div class="mb-3">
 
-                            <label for="saidaPapel" class="form-label">Saída de Papel</label>
+                            <label for="linguagem" class="form-label">Digitalização em Rede</label>
 
-                            <input type="text" class="form-control" id="resolucao" name="saidaPapel">
+                            <input type="text" class="form-control" id="resolucao" name="digitalizacao_rede">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="entradaPapel" class="form-label">Alimentação Automática</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="alimentacao_automatica">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Conectividade</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="conectividade">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Ciclo Mensal</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="ciclo_mensal">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Rendimento insumos</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="rendimento_mensal">
 
                         </div>
 

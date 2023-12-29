@@ -96,21 +96,9 @@
 
                         <div class="mb-3">
 
-                            <label for="memoria" class="form-label">Memória</label>
+                            <label for="memoria" class="form-label">Velocidade de Impressão</label>
 
-                            <input type="text" class="form-control" id="memoria" name="memoria" value="<?php echo $query->memoria; ?>">
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <div class="mb-3">
-
-                            <label for="resolucao" class="form-label">Resolução</label>
-
-                            <input type="text" class="form-control" id="resolucao" name="resolucao" value="<?php echo $query->resolucao; ?>">
+                            <input type="text" class="form-control" id="memoria" name="velocidade_impressao" value="<?php echo $query->velocidade_impressao; ?>">
 
                         </div>
 
@@ -120,21 +108,9 @@
 
                         <div class="mb-3">
 
-                            <label for="linguagem" class="form-label">Linguagem de Impressão</label>
+                            <label for="resolucao" class="form-label">Frente e Verso Automático</label>
 
-                            <input type="text" class="form-control" id="resolucao" name="linguagem" value="<?php echo $query->linguagem_impressao; ?>">
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <div class="mb-3">
-
-                            <label for="entradaPapel" class="form-label">Entrada de Papel</label>
-
-                            <input type="text" class="form-control" id="resolucao" name="entradaPapel" value="<?php echo $query->entrada_papel; ?>">
+                            <input type="text" class="form-control" id="resolucao" name="frente_verso" value="<?php echo $query->frente_verso_automatico; ?>">
 
                         </div>
 
@@ -144,9 +120,57 @@
 
                         <div class="mb-3">
 
-                            <label for="saidaPapel" class="form-label">Saída de Papel</label>
+                            <label for="linguagem" class="form-label">Digitalização em Rede</label>
 
-                            <input type="text" class="form-control" id="resolucao" name="saidaPapel" value="<?php echo $query->saida_papel; ?>">
+                            <input type="text" class="form-control" id="resolucao" name="digitalizacao_rede" value="<?php echo $query->digitalizacao_rede; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="entradaPapel" class="form-label">Alimentação Automática</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="alimentacao_automatica" value="<?php echo $query->alimentacao_automatica; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Conectividade</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="conectividade" value="<?php echo $query->conectividade; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Ciclo Mensal</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="ciclo_mensal" value="<?php echo $query->ciclo_mensal; ?>">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="mb-3">
+
+                            <label for="saidaPapel" class="form-label">Rendimento insumos</label>
+
+                            <input type="text" class="form-control" id="resolucao" name="rendimento_mensal" value="<?php echo $query->rendimento_insumos; ?>">
 
                         </div>
 

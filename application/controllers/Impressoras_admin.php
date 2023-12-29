@@ -95,15 +95,19 @@
 
                     $inputAddImpressora['formato_papel'] = $this->input->post('formatoPapel');
 
-                    $inputAddImpressora['memoria'] = $this->input->post('memoria');
+                    $inputAddImpressora['velocidade_impressao'] = $this->input->post('velocidade_impressao');
 
-                    $inputAddImpressora['resolucao'] = $this->input->post('resolucao');
+                    $inputAddImpressora['frente_verso_automatico'] = $this->input->post('frente_verso');
 
-                    $inputAddImpressora['linguagem_impressao'] = $this->input->post('linguagem');
+                    $inputAddImpressora['digitalizacao_rede'] = $this->input->post('digitalizacao_rede');
 
-                    $inputAddImpressora['entrada_papel'] = $this->input->post('entradaPapel');
+                    $inputAddImpressora['alimentacao_automatica'] = $this->input->post('alimentacao_automatica');
 
-                    $inputAddImpressora['saida_papel'] = $this->input->post('saidaPapel');
+                    $inputAddImpressora['conectividade'] = $this->input->post('conectividade');
+
+                    $inputAddImpressora['ciclo_mensal'] = $this->input->post('ciclo_mensal');
+
+                    $inputAddImpressora['rendimento_insumos'] = $this->input->post('rendimento_mensal');
 
                     $inputAddImpressora['descricao'] = $this->input->post('descricao');
 
@@ -201,15 +205,19 @@
 
                     $inputEditImpressora['formato_papel'] = $this->input->post('formatoPapel');
 
-                    $inputEditImpressora['memoria'] = $this->input->post('memoria');
+                    $inputEditImpressora['velocidade_impressao'] = $this->input->post('velocidade_impressao');
 
-                    $inputEditImpressora['resolucao'] = $this->input->post('resolucao');
+                    $inputEditImpressora['frente_verso_automatico'] = $this->input->post('frente_verso');
 
-                    $inputEditImpressora['linguagem_impressao'] = $this->input->post('linguagem');
+                    $inputEditImpressora['digitalizacao_rede'] = $this->input->post('digitalizacao_rede');
 
-                    $inputEditImpressora['entrada_papel'] = $this->input->post('entradaPapel');
+                    $inputEditImpressora['alimentacao_automatica'] = $this->input->post('alimentacao_automatica');
 
-                    $inputEditImpressora['saida_papel'] = $this->input->post('saidaPapel');
+                    $inputEditImpressora['conectividade'] = $this->input->post('conectividade');
+
+                    $inputEditImpressora['ciclo_mensal'] = $this->input->post('ciclo_mensal');
+
+                    $inputEditImpressora['rendimento_insumos'] = $this->input->post('rendimento_mensal');
 
                     $inputEditImpressora['descricao'] = $this->input->post('descricao');
 
