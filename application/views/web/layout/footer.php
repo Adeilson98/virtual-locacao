@@ -14,7 +14,7 @@
 
             </div>
 
-            <form action="contato/sendemail" id="form-footer">
+            <form action="<?php echo base_url('contato/sendemail'); ?>" method="post" id="form-footer">
 
                 <input type="text" placeholder="Nome" name="nome">
 
@@ -24,7 +24,7 @@
 
                 <input type="text" placeholder="Cidade" name="cidade">
 
-                <button>Enviar</button>
+                <button type = "submit">Enviar</button>
 
             </form>
         </div>
