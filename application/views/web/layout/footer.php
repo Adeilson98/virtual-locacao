@@ -8,8 +8,9 @@
 
                 <!-- Numeros de Telefone -->
 
-                <a href="https://wa.me/5511940292425" target = "_blank">Whatsapp: 11 9 4029-2425</a>
-                <a href="tel:1134135602">Telefone: (11) 3413-5602</a>
+                <a href="https://wa.me/5511940292425" target = "_blank">Whatsapp: 11 9 4029-2425 (Comercial)</a>
+                <a href="https://wa.me/551140234943" target = "_blank">Whatsapp: 11 4023-4943 (Técnico)</a>
+                <a href="tel:1134135602">Telefone: 11 3413-5602 (Comercial)</a>
                 <a href="mailto:comercial@virtuallocacao.com.br?subject=Quero saber mais sobre locação de impressoras">Email: comercial@virtuallocacao.com.br</a>
 
             </div>
@@ -46,10 +47,14 @@
                 <div class="flex-hours">
 
                     <h6>Whatsapp</h6>
-                    <a href="https://wa.me/5511940292425" target = "_blank">11 9 4029-2425</a>
+                    <a href="https://wa.me/5511940292425" target = "_blank">11 9 4029-2425 (Comercial)</a>
+
+                    <br>
+
+                    <a href="https://wa.me/551140234943" target = "_blank">11 4023-4943 (Técnico)</a>
 
                     <h6>Telefone</h6>
-                    <a href="tel:1134135602">(11) 3413-5602</a>
+                    <a href="tel:1134135602">11 3413-5602 (Comercial)</a>
 
                     <h6>E-mail</h6>
                     <a href="mailto:comercial@virtuallocacao.com.br?subject=Quero saber mais sobre locação de impressoras">comercial@virtuallocacao.com.br</a>
