@@ -1,0 +1,22 @@
+.obrigado {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.obrigado img {
+    width: 40%;
+}
+
+.obrigado h2 {
+    font-family: Arial, Helvetica, sans-serif;;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #f18a25;
+    font-weight: bold;
+}

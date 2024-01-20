@@ -60,7 +60,7 @@
 
             if($this->email->send()) {
 
-                redirect('');
+                redirect('obrigado');
 
             } else {
 

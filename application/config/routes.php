@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route[''] = 'Site/';
 $route['impressoras'] = "Site/Impressoras";
 $route['impressora/:any'] = "Site/Impressora";
+$route['obrigado'] = "Obrigado";
